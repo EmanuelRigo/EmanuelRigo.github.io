@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.second-body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radius-celeste {
+  background-color: #97d4f3;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1600px;
+  min-height: 600px;
+  box-sizing: border-box;
+}
+
+/*/////////PATIENT-FORM/////////*/
+
+.patient-form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 790px;
+  height: 524px;
+}
+
+.patient-form__container label {
+  margin-top: 10px;
+}
+
+.patient-form {
+  max-width: 800px;
+  padding: 0px;
+  background-color: #97d4f3;
+  border-radius: 10px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.patient-form_input {
+  margin-bottom: 0;
+}
+
+/*/////////ANALYSIS/////////*/
+
+.analysis__container {
+  width: 790px;
+}
+
+.analysis__grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.analysis__btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.analysis__card {
+  text-align: center;
+  box-sizing: border-box;
+  min-width: 100px;
+  max-width: 250px;
+  min-height: 168px;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.analysis__card p {
+  margin: 0;
+}
+
+.analysis__card-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(69, 180, 231);
+  height: 55px;
+  margin-bottom: 5px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.analysis__card-titulo-agregado {
+  background-color: #24b849;
+}
+
+.analysis__card-titulo h5 {
+  font-size: 22px;
+  color: aliceblue;
+  margin-bottom: 0;
+}
+
+.analysis__card-btn {
+  background-color: #bbb;
+  border-radius: 0 0 3px 3px;
+  color: white;
+  border: none;
+}
+
+.analysis__card-btn:hover {
+  background-color: #24b849;
+}
+
+.btn-analisis-enviar {
+  min-width: 100px;
+  max-width: 300px;
+  font-size: 20px;
+  height: 150px;
+  margin: 20px;
+}
+
+.analysis__card-price {
+  color: black;
+}
+
+/*/////////CSS TALON/////////*/
+
+.talon__container {
+  padding: 0;
+  width: 790px;
+}
+
+.talon__container td {
+  padding: 3px;
+  font-size: 17px;
+}
+
+.talon {
+  padding: 25px;
+  background: whitesmoke;
+  border-radius: 10px;
+  height: 524px;
+}
+
+.talon__number-id {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bbb;
+}
+
+.talon__name {
+  padding: 20px 0 20px 0;
+}
+
+.talon .table {
+  --bs-table-bg: #ffffff00;
+}
+.talon .talon__th {
+  padding: 0 10px 10px 0;
+}
+
+/*/////////CSS PATIENT-LIST/////////*/
+
+.patient-list__container {
+  width: 790px;
+  overflow: auto;
+  height: 524px;
+  padding-left: 0;
+}
+
+.patient-list {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.accordion-body p {
+  font-weight: 300;
+}
+
+/*/////////CSS BTN-LABS/////////*/
+.btns-lab__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 175px;
+}
+
+.btns-lab__top i {
+  font-size: 55px;
+}
+
+.btns-lab__bottom a {
+  color: aliceblue;
+}
+
+.btns-lab__top {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 87px;
+}
+
+.btns-lab__bottom {
+  background-color: whitesmoke;
+  border-radius: 11px;
+  padding: 8px;
+}
+
+.patient-form__btn {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid whitesmoke;
+  margin: 5px;
+}
+
+.analysis__btn {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #24b849;
+  color: aliceblue;
+  border: 4px solid whitesmoke;
+  margin: 5px;
+}
+
+.margin40 {
+  margin: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .radius-celeste {
+    padding: 0 40px 0 40px;
+    min-height: 550px;
+    min-width: 1024px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
